@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/res/menu
+END
+activity_add_new_word.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/JIT/!svn/ver/498/trunk/Android/MLFW/res/menu/activity_add_new_word.xml
+END
+move_word.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/JIT/!svn/ver/550/trunk/Android/MLFW/res/menu/move_word.xml
+END
+create_new_dict.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/JIT/!svn/ver/510/trunk/Android/MLFW/res/menu/create_new_dict.xml
+END
+check_knowledg_swipe.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/res/menu/check_knowledg_swipe.xml
+END
+activity_create_word.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/JIT/!svn/ver/204/trunk/Android/MLFW/res/menu/activity_create_word.xml
+END
+edit_word.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/JIT/!svn/ver/506/trunk/Android/MLFW/res/menu/edit_word.xml
+END
+main_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/JIT/!svn/ver/459/trunk/Android/MLFW/res/menu/main_menu.xml
+END
+activity_delete_words.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/JIT/!svn/ver/498/trunk/Android/MLFW/res/menu/activity_delete_words.xml
+END

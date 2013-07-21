@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/model
+END
+Block.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/model/Block.java
+END
+MlfwData.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/JIT/!svn/ver/539/trunk/Android/MLFW/src/com/qarea/mlfw/model/MlfwData.java
+END
+Word.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/model/Word.java
+END
+ExpandableBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/model/ExpandableBlock.java
+END
+WordWithTranslation.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/model/WordWithTranslation.java
+END

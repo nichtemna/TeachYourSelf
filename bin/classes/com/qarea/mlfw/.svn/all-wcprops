@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw
+END
+BaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/BaseActivity.java
+END
+DBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/JIT/!svn/ver/542/trunk/Android/MLFW/src/com/qarea/mlfw/DBHelper.java
+END
+DataProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/JIT/!svn/ver/554/trunk/Android/MLFW/src/com/qarea/mlfw/DataProvider.java
+END
+Extras.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/Extras.java
+END
+SplashScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/JIT/!svn/ver/567/trunk/Android/MLFW/src/com/qarea/mlfw/SplashScreen.java
+END

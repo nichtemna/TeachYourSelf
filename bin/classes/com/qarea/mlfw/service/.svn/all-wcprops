@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/service
+END
+NotificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/service/NotificationService.java
+END
+ServiceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/JIT/!svn/ver/567/trunk/Android/MLFW/src/com/qarea/mlfw/service/ServiceManager.java
+END
+CheckKnowledgeReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/service/CheckKnowledgeReceiver.java
+END

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#95C7E2</color>
+    <color name="light_blue">#C6E5F4</color>
+    <color name="blue_blue">#2A75A9</color>
+    <color name="blue_blue2">#4892C4</color>
+    <color name="dark_blue">#305A7A</color>
+    <color name="dark_blue2">#3B627F</color>
+    <color name="gray">#535355</color>
+    <color name="check_knowledge_blue">#5EC0C9</color>
+    <color name="check_knowledge_green">#B4CC44</color>
+    <color name="check_knowledge_red">#F96A80</color>
+
+</resources>

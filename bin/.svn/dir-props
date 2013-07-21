@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 40
+res
+
+R.txt
+
+proguard.txt
+
+jarlist.cache
+
+END

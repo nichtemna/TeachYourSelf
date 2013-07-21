@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/JIT/!svn/ver/565/trunk/Android/MLFW/src/com/qarea/mlfw/adapter
+END
+WeekListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/JIT/!svn/ver/547/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/WeekListAdapter.java
+END
+DayCursorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/JIT/!svn/ver/552/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/DayCursorAdapter.java
+END
+WeekMenuAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/JIT/!svn/ver/210/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/WeekMenuAdapter.java
+END
+GridCalendarAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/JIT/!svn/ver/539/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/GridCalendarAdapter.java
+END
+DictionaryListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/JIT/!svn/ver/552/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/DictionaryListAdapter.java
+END
+EditWordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/JIT/!svn/ver/538/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/EditWordAdapter.java
+END
+DeleteWordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/527/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/DeleteWordAdapter.java
+END
+AddWordCalendarAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/JIT/!svn/ver/539/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/AddWordCalendarAdapter.java
+END
+StatisticWordExpandableListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/JIT/!svn/ver/565/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/StatisticWordExpandableListAdapter.java
+END
+CalendarAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/JIT/!svn/ver/539/trunk/Android/MLFW/src/com/qarea/mlfw/adapter/CalendarAdapter.java
+END

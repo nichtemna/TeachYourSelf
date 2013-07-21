@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Self-teacher</string>
+    <string name="one_more">One more</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_info">Information</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_translator">Translator</string>
+    <string name="main_menu_tasks">Schedule</string>
+    <string name="main_menu_translator">Translator</string>
+    <string name="no_words">No words for this day</string>
+    <string name="no_dictionary">No dictionary found.</string>
+    <string name="new_word_btn">Add</string>
+    <string name="new_word_edit_hint">Word</string>
+    <string name="create_word">Add word</string>
+    <string name="no_such_word">No such word in dictionary</string>
+    <string name="done">Done</string>
+    <string name="main_menu_cheking_knowledge">Checking knowledge</string>
+    <string name="main_menu_statistic">Statistic</string>
+    <string name="no_statistic">No words for this dictionary</string>
+    <string name="unknown_word1">This word is not present in the dictionary.</string>
+    <string name="unknown_word2">Do you want to add it?</string>
+    <string name="translation">Translation</string>
+    <string name="select_dictionary">Dictionary:</string>
+    <string name="select_period">Period:</string>
+    <string name="set_word">Word:</string>
+    <string name="set_dictionary">Set dictionary</string>
+    <string name="translate">Translate</string>
+    <string name="clear">Clear</string>
+    <string name="repeat">Rpt.</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_move">Move</string>
+    <string name="settings_word_amoun">Repeate words</string>
+    <string name="settings_set_period">Set Period</string>
+    <string name="my_current_tasks">My current tasks</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_delete_words">DeleteWordsActivity</string>
+    <string name="delete">Удалить</string>
+    <string name="move">Переместить</string>
+    <string name="cancel">Отмена</string>
+    <string name="chose_date_rus">Выбрать дату</string>
+    <string name="check_all">Отметить все</string>
+    <string name="uncheck_all">Снять пометки со всех</string>
+    <string name="create_new_dictionary">Create new dictionary</string>
+    <string name="import_new_dictionary">Import new dictionary</string>
+    <string name="title_activity_move_words">MoveWordsActivity</string>
+    <string name="chose_word">Выберите хотя бы одно слово</string>
+    <string name="all_dicts">Dictionaries:</string>
+    <string name="hours_start">Hours start</string>
+    <string name="hours_end">Hours end</string>
+    <string name="timeout">Timeout</string>
+    <string name="language">Language</string>
+    <string name="turn_off">Turn off the reminder</string>
+    <string name="voice_on">Enable voice support in English</string>
+    <string name="yes">Yes</string>
+    <string name="chose_parts">Chose parts of speech for new dictionary</string>
+    <string name="dict_name">Dictionary name</string>
+    <string name="no">No</string>
+    <string name="add_word_question">No such word in dictionary. \nDo you want to add this word with translation?</string>
+    <string name="new_word">New word</string>
+    <string name="save">Save</string>
+    <string name="title_activity_add_new_word">AddNewWordActivity</string>
+    <string name="enter_type">Choose part of speech</string>
+    <string name="enter_word">Enter word</string>
+    <string name="chose_date">Chose date</string>
+    <string name="create_new_part">Create new part</string>
+    <string name="this_word_exist">This word already exist for today.</string>
+    <string name="web_for_info">http://www.qarea.com/</string>
+    <string name="empty_dictionaty">Empty dictionary</string>
+    <string name="add_check_words">To check knowledge you must add some words</string>
+    <string name="choose_dict">You must choose other dictionary</string>
+    <string name="ok">Ok</string>
+    <string name="checking_knowledge_mode">Checking knowledge mode</string>
+    <string name="tap_mode">Tap mode</string>
+    <string name="swipe_mode">Swipe mode</string>
+
+    <string-array name="parts_of_speech">
+        <item>ver.</item>
+        <item>noun</item>
+        <item>artic.</item>
+        <item>adj.</item>
+        <item>pron.</item>
+        <item>num.</item>
+        <item>adv.</item>
+        <item>prep.</item>
+        <item>conj.</item>
+    </string-array>
+    <string-array name="parts_of_speech_full">
+        <item>Verb</item>
+        <item>Noun</item>
+        <item>Article</item>
+        <item>Adjective</item>
+        <item>Pronoun</item>
+        <item>Numeric</item>
+        <item>Adverb</item>
+        <item>Preposition</item>
+        <item>Conjunction</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="hours">
+        <item>01:00</item>
+        <item>02:00</item>
+        <item>03:00</item>
+        <item>04:00</item>
+        <item>05:00</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+        <item>24:00</item>
+    </string-array>
+    <string-array name="timeout">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>5 hours</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+        <item>9 hours</item>
+        <item>10 hours</item>
+        <item>11 hours</item>
+        <item>12 hours</item>
+    </string-array>
+
+    <string name="title_activity_edit_word">EditWordActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_new_dict">CreateNewDictActivity</string>
+    <string name="title_activity_edit_dictionary">EditDictionaryActivity</string>
+    <string name="title_activity_move_word">MoveWordActivity</string>
+    <string name="title_activity_check_knowledg_swipe">CheckKnowledgSwipeActivity</string>
+
+</resources>

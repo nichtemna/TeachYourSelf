@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/util
+END
+DateSlider.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/JIT/!svn/ver/552/trunk/Android/MLFW/src/com/qarea/mlfw/util/DateSlider.java
+END
+UnknownWordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/539/trunk/Android/MLFW/src/com/qarea/mlfw/util/UnknownWordException.java
+END
+WordValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/JIT/!svn/ver/200/trunk/Android/MLFW/src/com/qarea/mlfw/util/WordValue.java
+END
+LocalDataProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/JIT/!svn/ver/568/trunk/Android/MLFW/src/com/qarea/mlfw/util/LocalDataProvider.java
+END
+WordStatistic.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/util/WordStatistic.java
+END
+Dictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/util/Dictionary.java
+END
+WeekProgress.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/JIT/!svn/ver/165/trunk/Android/MLFW/src/com/qarea/mlfw/util/WeekProgress.java
+END
+Period.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/JIT/!svn/ver/206/trunk/Android/MLFW/src/com/qarea/mlfw/util/Period.java
+END
+SelectedDictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/util/SelectedDictionary.java
+END

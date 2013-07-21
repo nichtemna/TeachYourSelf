@@ -1,0 +1,14 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="green_button_style">
+        <item name="android:layout_width">200dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+</resources>

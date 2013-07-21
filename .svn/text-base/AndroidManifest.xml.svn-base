@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qarea.mlfw"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.qarea.mlfw.SplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.MainMenuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.WeekMenuActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.WeekViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.CreateWordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.CheckingKnowledgeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.StatisticsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.TranslatorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.InfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.MoveWordCalendarActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.viewpager.ViewPagerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.DeleteWordsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_delete_words"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.AddNewWordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_add_new_word"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.EditWordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_edit_word"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.CreateNewDictActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_create_new_dict"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.EditDictionaryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_edit_dictionary"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.FileBrowserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="File browser"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="ua.com.vassiliev.androidfilebrowser.SELECT_DIRECTORY_ACTION" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.MoveWordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_move_word"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qarea.mlfw.activity.CheckKnowledgeSwipeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_check_knowledg_swipe"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+
+        <service
+            android:name="com.qarea.mlfw.service.NotificationService"
+            android:enabled="true" />
+
+        <receiver android:name="com.qarea.mlfw.service.CheckKnowledgeReceiver" />
+        <receiver android:name="com.qarea.mlfw.service.ServiceManager" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

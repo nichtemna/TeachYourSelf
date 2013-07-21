@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/JIT/!svn/ver/512/trunk/Android/MLFW/res/drawable-ldpi
+END
+ic_launcher.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/JIT/!svn/ver/229/trunk/Android/MLFW/res/drawable-ldpi/ic_launcher.png
+END
+folder_icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/JIT/!svn/ver/512/trunk/Android/MLFW/res/drawable-ldpi/folder_icon.png
+END
+file_icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/JIT/!svn/ver/512/trunk/Android/MLFW/res/drawable-ldpi/file_icon.png
+END
+dir_up.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/JIT/!svn/ver/512/trunk/Android/MLFW/res/drawable-ldpi/dir_up.png
+END
+folder_icon_light.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/JIT/!svn/ver/512/trunk/Android/MLFW/res/drawable-ldpi/folder_icon_light.png
+END

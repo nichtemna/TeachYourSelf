@@ -1,0 +1,150 @@
+package com.qarea.mlfw.model;
+
+import java.io.Serializable;
+
+import android.graphics.drawable.GradientDrawable;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.nineoldandroids.animation.ObjectAnimator;
+import com.nineoldandroids.view.ViewHelper;
+
+public class Block implements Serializable {
+	private int id;
+	private TextView textView;
+	private float x;
+	private float y;
+	private int height;
+	private int width;
+	private boolean visible = false;
+	float startMoveX, startMoveY;
+
+	public Block(TextView textView, int id) {
+		this.textView = textView;
+		this.id = id;
+	}
+
+	public void setLayoutParams(int width, int height) {
+		textView.setLayoutParams(new RelativeLayout.LayoutParams(width, height));
+	}
+
+	public void move(float moveX, float moveY) {
+		ViewHelper.setX(textView, moveX);
+		ViewHelper.setY(textView, moveY);
+	}
+
+	public void scale(float scaleX, float scaleY) {
+		ViewHelper.setScaleX(textView, scaleX);
+		ViewHelper.setScaleY(textView, scaleY);
+	}
+
+	public void animateScaling(float scaleX, float scaleY) {
+		ObjectAnimator.ofFloat(textView, "scaleX", 1).setDuration(500).start();
+		ObjectAnimator.ofFloat(textView, "scaleY", 1).setDuration(500).start();
+	}
+
+	public void animateMoving(float moveX, float moveY) {
+		ObjectAnimator.ofFloat(textView, "translationX", moveX)
+				.setDuration(500).start();
+		ObjectAnimator.ofFloat(textView, "translationY", moveY)
+				.setDuration(500).start();
+	}
+
+	public TextView getTextView() {
+		return textView;
+	}
+
+	public void setTextView(TextView textView) {
+		this.textView = textView;
+	}
+
+	public void setLocation() {
+		int[] location = new int[2];
+		textView.getLocationOnScreen(location);
+		this.x = Float.valueOf(location[0]);
+		this.y = Float.valueOf(location[1]);
+	}
+
+	public void setX(Float x) {
+		this.x = x;
+	}
+
+	public void setY(Float y) {
+		this.y = y;
+	}
+
+	public float getX() {
+		Log.d("tag", id + " x " + x);
+		return x;
+	}
+
+	public float getY() {
+		Log.d("tag", id + " y " + y);
+		return y;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeightWidth(int height) {
+		this.height = height;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public void setHeightWidth() {
+		this.width = textView.getWidth();
+		this.height = textView.getHeight();
+	}
+
+	public boolean isVisible() {
+		return visible;
+	}
+
+	public void setVisible(boolean visible) {
+		this.visible = visible;
+	}
+
+	public String getText() {
+		return textView.getText().toString();
+	}
+
+	public void setText(String text) {
+		this.textView.setText(text);
+	}
+
+	public void setBackgroundColor(int color) {
+		((GradientDrawable) textView.getBackground()).setColor(color);
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void getStartTouchPos(MotionEvent event) {
+		this.startMoveX = event.getRawX();
+		this.startMoveY = event.getRawY();
+	}
+
+	public boolean sameEventCoordinates(MotionEvent event) {
+		return (startMoveX == event.getRawX() && startMoveY == event.getRawY());
+	}
+
+	public float getStartMoveX() {
+		return startMoveX;
+	}
+
+	public float getStartMoveY() {
+		return startMoveY;
+	}
+
+}

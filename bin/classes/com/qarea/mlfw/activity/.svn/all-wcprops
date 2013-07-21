@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/activity
+END
+EditDictionaryActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/JIT/!svn/ver/538/trunk/Android/MLFW/src/com/qarea/mlfw/activity/EditDictionaryActivity.java
+END
+DeleteWordsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/JIT/!svn/ver/570/trunk/Android/MLFW/src/com/qarea/mlfw/activity/DeleteWordsActivity.java
+END
+MoveWordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/570/trunk/Android/MLFW/src/com/qarea/mlfw/activity/MoveWordActivity.java
+END
+TranslatorActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/JIT/!svn/ver/570/trunk/Android/MLFW/src/com/qarea/mlfw/activity/TranslatorActivity.java
+END
+CreateNewDictActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/JIT/!svn/ver/538/trunk/Android/MLFW/src/com/qarea/mlfw/activity/CreateNewDictActivity.java
+END
+WeekViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/538/trunk/Android/MLFW/src/com/qarea/mlfw/activity/WeekViewActivity.java
+END
+MoveWordCalendarActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/JIT/!svn/ver/538/trunk/Android/MLFW/src/com/qarea/mlfw/activity/MoveWordCalendarActivity.java
+END
+MainMenuActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/activity/MainMenuActivity.java
+END
+EditWordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/532/trunk/Android/MLFW/src/com/qarea/mlfw/activity/EditWordActivity.java
+END
+WeekMenuActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/206/trunk/Android/MLFW/src/com/qarea/mlfw/activity/WeekMenuActivity.java
+END
+InfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/JIT/!svn/ver/570/trunk/Android/MLFW/src/com/qarea/mlfw/activity/InfoActivity.java
+END
+FileBrowserActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/JIT/!svn/ver/551/trunk/Android/MLFW/src/com/qarea/mlfw/activity/FileBrowserActivity.java
+END
+AddNewWordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/JIT/!svn/ver/568/trunk/Android/MLFW/src/com/qarea/mlfw/activity/AddNewWordActivity.java
+END
+DictionaryBaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/JIT/!svn/ver/513/trunk/Android/MLFW/src/com/qarea/mlfw/activity/DictionaryBaseActivity.java
+END
+CreateWordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/JIT/!svn/ver/568/trunk/Android/MLFW/src/com/qarea/mlfw/activity/CreateWordActivity.java
+END
+CheckingKnowledgeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/activity/CheckingKnowledgeActivity.java
+END
+CheckKnowledgeSwipeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/activity/CheckKnowledgeSwipeActivity.java
+END
+StatisticsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/activity/StatisticsActivity.java
+END
+SettingsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/JIT/!svn/ver/576/trunk/Android/MLFW/src/com/qarea/mlfw/activity/SettingsActivity.java
+END
+AbstractCheckingKnowledgeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/JIT/!svn/ver/575/trunk/Android/MLFW/src/com/qarea/mlfw/activity/AbstractCheckingKnowledgeActivity.java
+END
