@@ -6,11 +6,12 @@ package com.qarea.mlfw;
  * @author shishova
  */
 public interface Extras {
-    String DATA = "data";
-    String SHOW_ADD_DIALOG = "show_add_dialog";
-    String LANGUAGE = "language";
-    String VOICE_ENABLED = "voice_enabled";
-    int VOICE_CHECK_CODE = 0;
-    String TOSEND = "tosend";
-    String CHECK_MODE = "check_mode";
+	String DATA = "data";
+	String SHOW_ADD_DIALOG = "show_add_dialog";
+	String LANGUAGE = "language";
+	String VOICE_ENABLED = "voice_enabled";
+	int VOICE_CHECK_CODE = 0;
+	String TOSEND = "tosend";
+	String CHECK_MODE = "check_mode";
+	String USED_PARTS = "used_parts";
 }

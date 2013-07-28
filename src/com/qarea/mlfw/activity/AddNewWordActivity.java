@@ -9,7 +9,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -31,15 +30,14 @@ public class AddNewWordActivity extends BaseActivity implements OnClickListener 
 	private String word;
 	public ArrayList<String> words = new ArrayList<String>();
 	public ArrayList<String> chosen_types = new ArrayList<String>();
-	ArrayAdapter<String> adapter_dialog, adapter_list;
+	private ArrayAdapter<String> adapter_dialog, adapter_list;
 	private String chosen_type;
 	private HashMap<String, String> word_translation = new HashMap<String, String>();
 	private NewDictionary dictionary;
 	private ArrayList<String> types;
-
 	private Button btn_more, btn_save, btn_chose;
-	EditText et_translate, et_word;
-	Spinner spinner;
+	private EditText et_translate, et_word;
+	private Spinner spinner;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +46,7 @@ public class AddNewWordActivity extends BaseActivity implements OnClickListener 
 
 		initialization();
 
-		adapter_list = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, words);
+		adapter_list = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
 
 		words_list.setAdapter(adapter_list);
 	}
@@ -76,38 +73,28 @@ public class AddNewWordActivity extends BaseActivity implements OnClickListener 
 		switch (v.getId()) {
 		case R.id.button1:
 			// if user don't chose type - show Toast
-			if (btn_chose.getText().toString()
-					.equals(getResources().getString(R.string.enter_type))) {
-				Toast.makeText(AddNewWordActivity.this,
-						getResources().getString(R.string.enter_type),
-						Toast.LENGTH_LONG).show();
+			if (btn_chose.getText().toString().equals(getResources().getString(R.string.enter_type))) {
+				Toast.makeText(AddNewWordActivity.this, getResources().getString(R.string.enter_type), Toast.LENGTH_LONG).show();
 			} else {
 				// remove chosen type from dialog and add word to list
 				chosen_types.remove(chosen_type);
 				adapter_dialog.notifyDataSetChanged();
 
-				word_translation.put(chosen_type, et_translate.getText()
-						.toString());
-				words.add(chosen_type + "\n"
-						+ et_translate.getText().toString());
+				word_translation.put(chosen_type, et_translate.getText().toString());
+				words.add(chosen_type + "\n" + et_translate.getText().toString());
 				adapter_list.notifyDataSetChanged();
-				btn_chose
-						.setText(getResources().getString(R.string.enter_type));
+				btn_chose.setText(getResources().getString(R.string.enter_type));
 				et_translate.setText("");
 			}
 			break;
 		case R.id.button2:
 			// save word's translation to db and word to day
 			if (!et_translate.getText().toString().equals("")) {
-				if (btn_chose.getText().toString()
-						.equals(getResources().getString(R.string.enter_type))) {
-					Toast.makeText(AddNewWordActivity.this,
-							getResources().getString(R.string.enter_type),
-							Toast.LENGTH_LONG).show();
+				if (btn_chose.getText().toString().equals(getResources().getString(R.string.enter_type))) {
+					Toast.makeText(AddNewWordActivity.this, getResources().getString(R.string.enter_type), Toast.LENGTH_LONG).show();
 					break;
 				} else {
-					word_translation.put(chosen_type, et_translate.getText()
-							.toString());
+					word_translation.put(chosen_type, et_translate.getText().toString());
 				}
 			}
 
@@ -128,21 +115,19 @@ public class AddNewWordActivity extends BaseActivity implements OnClickListener 
 
 		case 0:
 			types = dataProvider.getTypes();
-			adapter_dialog = new ArrayAdapter<String>(this,
-					android.R.layout.select_dialog_item, types);
-			adb.setAdapter(adapter_dialog,
-					new DialogInterface.OnClickListener() {
+			adapter_dialog = new ArrayAdapter<String>(this, android.R.layout.select_dialog_item, types);
+			adb.setAdapter(adapter_dialog, new DialogInterface.OnClickListener() {
 
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							// set type name on button and remove this type from
-							// the list
-							chosen_type = adapter_dialog.getItem(which);
-							btn_chose.setText(chosen_type);
-							types.remove(types.indexOf(chosen_type));
-							adapter_dialog.notifyDataSetChanged();
-						}
-					});
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// set type name on button and remove this type from
+					// the list
+					chosen_type = adapter_dialog.getItem(which);
+					btn_chose.setText(chosen_type);
+					types.remove(types.indexOf(chosen_type));
+					adapter_dialog.notifyDataSetChanged();
+				}
+			});
 			break;
 
 		}
@@ -151,12 +136,10 @@ public class AddNewWordActivity extends BaseActivity implements OnClickListener 
 
 	private void addNewWordToDictionary() {
 
-		Iterator<Map.Entry<String, String>> iter = word_translation.entrySet()
-				.iterator();
+		Iterator<Map.Entry<String, String>> iter = word_translation.entrySet().iterator();
 		while (iter.hasNext()) {
 			Map.Entry<String, String> pairs = iter.next();
-			dictionary.addWordInDictionary(et_word.getText().toString(),
-					pairs.getKey(), pairs.getValue() + "*");
+			dictionary.addWordInDictionary(et_word.getText().toString(), pairs.getKey(), pairs.getValue() + "*");
 		}
 	}
 
@@ -164,8 +147,7 @@ public class AddNewWordActivity extends BaseActivity implements OnClickListener 
 		calendar.setTimeInMillis(getIntent().getLongExtra("currentDate", 0));
 		clearCalendar();
 		try {
-			dataProvider.insert(SelectedDictionary.getDictionaryID(), et_word
-					.getText().toString(), calendar.getTimeInMillis());
+			dataProvider.insert(SelectedDictionary.getDictionaryID(), et_word.getText().toString(), calendar.getTimeInMillis());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

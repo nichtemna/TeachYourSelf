@@ -61,7 +61,8 @@
     <string name="new_word">New word</string>
     <string name="save">Save</string>
     <string name="title_activity_add_new_word">AddNewWordActivity</string>
-    <string name="enter_type">Choose part of speech</string>
+    <string name="enter_type">Choose part</string>
+    <string name="add_new_part">Add new part of speech</string>
     <string name="enter_word">Enter word</string>
     <string name="chose_date">Chose date</string>
     <string name="create_new_part">Create new part</string>
@@ -74,6 +75,17 @@
     <string name="checking_knowledge_mode">Checking knowledge mode</string>
     <string name="tap_mode">Tap mode</string>
     <string name="swipe_mode">Swipe mode</string>
+    <string name="title_activity_edit_word">EditWordActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_new_dict">CreateNewDictActivity</string>
+    <string name="title_activity_edit_dictionary">EditDictionaryActivity</string>
+    <string name="title_activity_move_word">MoveWordActivity</string>
+    <string name="title_activity_check_knowledg_swipe">CheckKnowledgSwipeActivity</string>
+    <string name="you_are_right">You are right ;-)</string>
+    <string name="you_are_wrong">You are wrong :-(</string>
+    <string name="enter_translation">Enter translation </string>
+    <string name="enter_some_translation">Please, enter translation</string>
+    <string name="choose_some_part">Please, choose part of speech</string>
 
     <string-array name="parts_of_speech">
         <item>ver.</item>
@@ -144,14 +156,5 @@
         <item>11 hours</item>
         <item>12 hours</item>
     </string-array>
-
-    <string name="title_activity_edit_word">EditWordActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_create_new_dict">CreateNewDictActivity</string>
-    <string name="title_activity_edit_dictionary">EditDictionaryActivity</string>
-    <string name="title_activity_move_word">MoveWordActivity</string>
-    <string name="title_activity_check_knowledg_swipe">CheckKnowledgSwipeActivity</string>
-    <string name="you_are_right">You are right ;-)</string>
-    <string name="you_are_wrong">You are wrong :-(</string>
 
 </resources>

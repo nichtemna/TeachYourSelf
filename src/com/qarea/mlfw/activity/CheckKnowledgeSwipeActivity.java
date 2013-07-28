@@ -290,7 +290,6 @@ public class CheckKnowledgeSwipeActivity extends
 
 	private void returnBlocksToStart() {
 		main_block.move(0, -500);
-
 		for (int i = 0; i < blocks.size(); i++) {
 			ViewHelper.setY(blocks.get(i).getTextView(), -500);
 		}

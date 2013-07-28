@@ -5,15 +5,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.OnInitListener;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -33,9 +30,7 @@ import com.qarea.mlfw.R;
 import com.qarea.mlfw.util.SelectedDictionary;
 import com.qarea.mlfw.util.WordStatistic;
 
-public class CheckingKnowledgeActivity extends
-		AbstractCheckingKnowledgeActivity implements OnInitListener,
-		OnClickListener {
+public class CheckingKnowledgeActivity extends AbstractCheckingKnowledgeActivity implements OnInitListener, OnClickListener {
 
 	private ArrayList<WordStatistic> alhmAllForList = new ArrayList<WordStatistic>();;
 
@@ -45,7 +40,6 @@ public class CheckingKnowledgeActivity extends
 
 	private int wordIndex;
 	private String nowWord;
-	private String[] delimiters = new String[] { "," };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -82,8 +76,7 @@ public class CheckingKnowledgeActivity extends
 		if (status == TextToSpeech.SUCCESS) {
 			myTts.setLanguage(Locale.ENGLISH);
 		} else if (status == TextToSpeech.ERROR) {
-			Toast.makeText(this, "Sorry! Text To Speech failed...",
-					Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Sorry! Text To Speech failed...", Toast.LENGTH_LONG).show();
 		}
 		if (myTts.isLanguageAvailable(Locale.ENGLISH) == TextToSpeech.LANG_AVAILABLE) {
 			myTts.setLanguage(Locale.ENGLISH);
@@ -95,28 +88,22 @@ public class CheckingKnowledgeActivity extends
 
 		Cursor allDictionary = dataProvider.getSelectedDictionary();
 		while (allDictionary.moveToNext())
-			dictionaryArray.add(allDictionary.getString(allDictionary
-					.getColumnIndex(DBDictionary.NAME)));
+			dictionaryArray.add(allDictionary.getString(allDictionary.getColumnIndex(DBDictionary.NAME)));
 		allDictionary.close();
-		ArrayAdapter<String> sadapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, dictionaryArray);
+		ArrayAdapter<String> sadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, dictionaryArray);
 		sadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		sDictionary.setAdapter(sadapter);
-		sDictionary.setSelection(SelectedDictionary.getDictionaryList()
-				.indexOf(SelectedDictionary.getDictionaryID()));
+		sDictionary.setSelection(SelectedDictionary.getDictionaryList().indexOf(SelectedDictionary.getDictionaryID()));
 		sDictionary.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
-			public void onItemSelected(AdapterView<?> arg0, View arg1,
-					int position, long arg3) {
+			public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long arg3) {
 				TextView raw = (TextView) arg1;
-				int dictionaryID = dataProvider.getDictionaryIdByName(raw
-						.getText().toString());
+				int dictionaryID = dataProvider.getDictionaryIdByName(raw.getText().toString());
 				SelectedDictionary.setDictionaryID(dictionaryID);
 				wordIndex = 0;
 				refreshWord();
 
-				SharedPreferences settings = PreferenceManager
-						.getDefaultSharedPreferences(getBaseContext());
+				SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putInt(SAVE_WORD, dictionaryID);
 				editor.commit();
@@ -173,22 +160,13 @@ public class CheckingKnowledgeActivity extends
 				do {
 					id = allIdAndWords.getInt(0);
 					percent = 0;
-					allAttempts = dataProvider.getCountCorrectOrAllAnswer(id,
-							false);
-					int correctAnswerCount = dataProvider
-							.getCountCorrectOrAllAnswer(id, true);
+					allAttempts = dataProvider.getCountCorrectOrAllAnswer(id, false);
+					int correctAnswerCount = dataProvider.getCountCorrectOrAllAnswer(id, true);
 					if (allAttempts != 0) {
 						percent = ((float) correctAnswerCount / (float) allAttempts) * 100;
 					}
-					hmTmp = new WordStatistic(
-							id,
-							allIdAndWords.getString(allIdAndWords
-									.getColumnIndex(DBHelper.DBWords.WORD_NAME)),
-							percent,
-							allAttempts,
-							correctAnswerCount,
-							(new Date()).getTime(),
-							allIdAndWords.getInt(allIdAndWords
+					hmTmp = new WordStatistic(id, allIdAndWords.getString(allIdAndWords.getColumnIndex(DBHelper.DBWords.WORD_NAME)), percent,
+							allAttempts, correctAnswerCount, (new Date()).getTime(), allIdAndWords.getInt(allIdAndWords
 									.getColumnIndex(DBHelper.DBWords.DICTIONARY_ID)));
 					hm.add(hmTmp);
 				} while (allIdAndWords.moveToNext());
@@ -211,20 +189,16 @@ public class CheckingKnowledgeActivity extends
 			}
 			Date date = new Date();
 			long today = date.getTime();
-			int result = dataProvider.getDictionary(this)
-					.checkOfTheCorrectness(nowWord, wordTranslate);
+			int result = dataProvider.getDictionary(this).checkOfTheCorrectness(nowWord, wordTranslate);
 
 			if (result == 0) {
-				dataProvider.insertStatus(alhmAllForList.get(wordIndex)
-						.getWordId(), today, false);
+				dataProvider.insertStatus(alhmAllForList.get(wordIndex).getWordId(), today, false);
 				Toast.makeText(this, "Uncorrect", Toast.LENGTH_SHORT).show();
 			} else if (result == 1) {
-				dataProvider.insertStatus(alhmAllForList.get(wordIndex)
-						.getWordId(), today, true);
+				dataProvider.insertStatus(alhmAllForList.get(wordIndex).getWordId(), today, true);
 				Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
 			} else {
-				Toast.makeText(this, "No word in dictionary",
-						Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "No word in dictionary", Toast.LENGTH_SHORT).show();
 			}
 			wordIndex++;
 			refreshWord();
@@ -239,20 +213,16 @@ public class CheckingKnowledgeActivity extends
 			// parsedWordTranslate = translateWordParser(wordTranslate);
 			date = new Date();
 			today = date.getTime();
-			result = dataProvider.getDictionary(this).checkOfTheCorrectness(
-					nowWord, wordTranslate);
+			result = dataProvider.getDictionary(this).checkOfTheCorrectness(nowWord, wordTranslate);
 
 			if (result == 0) {
-				dataProvider.insertStatus(alhmAllForList.get(wordIndex)
-						.getWordId(), today, false);
+				dataProvider.insertStatus(alhmAllForList.get(wordIndex).getWordId(), today, false);
 				Toast.makeText(this, "Uncorrect", Toast.LENGTH_SHORT).show();
 			} else if (result == 1) {
-				dataProvider.insertStatus(alhmAllForList.get(wordIndex)
-						.getWordId(), today, true);
+				dataProvider.insertStatus(alhmAllForList.get(wordIndex).getWordId(), today, true);
 				Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
 			} else {
-				Toast.makeText(this, "No word in dictionary",
-						Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "No word in dictionary", Toast.LENGTH_SHORT).show();
 			}
 			finish();
 			break;
@@ -264,8 +234,7 @@ public class CheckingKnowledgeActivity extends
 	}
 
 	private boolean showSound() {
-		SharedPreferences settings = PreferenceManager
-				.getDefaultSharedPreferences(this);
+		SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
 		return settings.getBoolean(Extras.VOICE_ENABLED, false);
 	}
 
